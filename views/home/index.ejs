@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home page</title>
+</head>
+<body>
+	<h1>Welcome Home!</h1>
+	<a href="/logout">logout</a>
+	
+	<table border="1">
+		<tr>
+			<td>ID</td>
+			<td>USERNAME</td>
+			<td>PASSWORD</td>
+		</tr>
+
+	<% for(var i=0; i < users.length; i++){ %>
+
+		<tr>
+			<td><%= users[i].id %></td>
+			<td><%= users[i].username %></td>
+			<td><%= users[i].password %></td>
+		</tr>
+	<% } %>
+
+	</table>
+
+
+</body>
+</html>
